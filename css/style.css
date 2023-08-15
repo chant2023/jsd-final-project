@@ -1,0 +1,28 @@
+input {
+    width: 250px;
+    border: 2px solid black;
+}
+
+button {
+    margin: 10px;
+}
+
+/* #sheetData {
+    display: none;
+} */
+/* html table, borders, padding, minimum width  */
+
+table {
+    width: 100%; /* take the full width of the container */
+    border-collapse: collapse; /* ensures that borders don't double up */
+}
+
+td {
+    border: 1px solid black; /* apply border to table cells */
+    padding: 2px; /* add some padding for better appearance */
+    text-align: center; /* align text to the left; can be adjusted as needed */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* give every even row a light gray background for better readability */
+}
