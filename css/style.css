@@ -1,28 +1,69 @@
-input {
-    width: 250px;
-    border: 2px solid black;
+body {
+    font-family: 'Preahvihear', sans-serif; /* Use a simple and readable font */
+    background-color: #1a1a1a; /* A dark background */
+    padding: 20px; /* Some space around the content */
+    color: #e6e6e6;
+    background-image: linear-gradient(90deg, #020024 0%, #09093c 60%, #053d48 100%);
+    
 }
 
-button {
-    margin: 10px;
+h1 {
+    color: #0ab34bc4; /* Blue color for the main heading */
+    margin-bottom: 30px; /* Space below the heading */
+    text-align: center; /* Center the main title */
+    letter-spacing: 1px;
 }
 
-/* #sheetData {
-    display: none;
-} */
-/* html table, borders, padding, minimum width  */
-
-table {
-    width: 100%; /* take the full width of the container */
-    border-collapse: collapse; /* ensures that borders don't double up */
+#dataFilter {
+    padding: 5px;
+    border-radius: 5px; /* Rounded corners */
+    background-color: lightgrey;
+    border: 3px solid #0d01ff; /* Border for button effect */
+    width: 20%; /* Make the input span 10% the width of its container */
+    margin-bottom: 1px; /* Some space below the input field */
+    box-sizing: border-box; /* To make sure padding and border are included in the width */
+    margin-left: 1%
 }
 
-td {
-    border: 1px solid black; /* apply border to table cells */
-    padding: 2px; /* add some padding for better appearance */
-    text-align: center; /* align text to the left; can be adjusted as needed */
+
+
+#pTag {
+    color: #777; /* A softer color for the info text */
+    margin-bottom: 20px; /* Some space below the paragraph */
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2; /* give every even row a light gray background for better readability */
+/* Style the table */
+
+#sheetData table {
+    width: 98%; /* Make the table span the width of its container */
+    margin: 0 auto;
+    border-collapse: separate; /* Remove spaces between table cells */  
+    border-radius: 10px;  
+    border-spacing: 0;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 10px lightblue; /* Adds a soft shadow for depth */
 }
+
+#sheetData td, #sheetData th {
+    border: 1px solid #444; /* Border around table cells */
+    padding: 2px ; /* Some space inside each cell */
+}
+
+#sheetData tr:nth-child(even) {
+    background-color: #2a2a2a; /* Every other row has a light background */
+}
+
+#sheetData tr:nth-child(odd) {
+    background-color:#222; /* Every other row has a light background */
+}
+
+#sheetData tr:hover {
+    background-color: #444; 
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+
+
+
+

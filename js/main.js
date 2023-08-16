@@ -1,7 +1,10 @@
 console.log('hello from final project', axios);
 
+
 //declare variables to get data from google sheets, need to redo this so I don't expose API keys
-const API_KEY = "AIzaSyDG4-gTqJKeVcWDCw9NXI0kXbvNw1TtErs";
+// const API_KEY = process.env.API_KEY;
+// console.log(process.env.API_KEY);
+const API_KEY = "AIzaSyDG4-gTqJKeVcWDCw9NXI0kXbvNw1TtErs"
 const SHEET_ID = '19I4V_rXFsNrvHl7MOJzPWnFolKIK9raMUTRy2zWaCiY';
 const URL = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1?key=${API_KEY}`;
 let transactionData;
